@@ -108,12 +108,12 @@ header, main, footer, .container, .form, iframe {
 	}
 	input:placeholder-shown + label, select + label  {
 		display: none;
+		right: 45px;
+		text-align: right;
 	}
 
 	select:focus + label {
 		display: block;
-		right: 40px;
-		text-align: right;
 	}
 
 	input, select, button {
@@ -139,9 +139,9 @@ header, main, footer, .container, .form, iframe {
 	}
 
 	.selectdiv:after {
-	    content: url(../images/icons/chevron.svg);
+	    content: url(../images/chevron.svg);
 	    color: $blueGrey ;
-	    right: 11px;
+	    right: 15px;
 	    top: 12px;
 	    padding: 15px 0px 0px 8px;
 	    position: absolute;
@@ -206,6 +206,7 @@ header, main, footer, .container, .form, iframe {
 .gallery {
 	.gallery--item {
 		display: inline-block;
+		margin-bottom: 20px;
 		.gallery--item-image {
 			width: 370px;
 			height: auto;
@@ -278,6 +279,7 @@ footer{
 		width: 370px;
 		.social-icon {
 			width: 39px;
+			padding-right: 8px;
 		}
 		@media all and (max-width: 770px) {
 			width: 100%;

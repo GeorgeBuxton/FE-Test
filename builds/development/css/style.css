@@ -105,11 +105,11 @@ header, main, footer, .container, .form, iframe {
 }
 .form input:placeholder-shown + label, .form select + label {
   display: none;
+  right: 40px;
+  text-align: right;
 }
 .form select:focus + label {
   display: block;
-  right: 40px;
-  text-align: right;
 }
 .form input, .form select, .form button {
   display: block;
@@ -188,6 +188,7 @@ header, main, footer, .container, .form, iframe {
 /* gallery */
 .gallery .gallery--item {
   display: inline-block;
+  margin-bottom: 20px;
 }
 .gallery .gallery--item .gallery--item-image {
   width: 370px;
