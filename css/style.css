@@ -186,20 +186,20 @@ header, main, footer, .container, .form, iframe {
 }
 
 /* gallery */
-.gallery .gallery-item {
+.gallery .gallery--item {
   display: inline-block;
 }
-.gallery .gallery-item .gallery-item-image {
+.gallery .gallery--item .gallery--item-image {
   width: 370px;
   height: auto;
 }
 @media all and (max-width: 770px) {
-  .gallery .gallery-item {
+  .gallery .gallery--item {
     clear: both;
     margin: 0px auto;
     display: block;
   }
-  .gallery .gallery-item .gallery-item-image {
+  .gallery .gallery--item .gallery--item-image {
     width: 300px;
   }
 }
@@ -263,6 +263,10 @@ footer section .social-icon {
   footer section {
     width: 100%;
     padding: 10px 0px;
+  }
+  footer section p {
+    width: 300px;
+    margin: 30px auto;
   }
 }
 footer aside {

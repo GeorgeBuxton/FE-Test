@@ -204,19 +204,19 @@ header, main, footer, .container, .form, iframe {
 /* gallery */
 
 .gallery {
-	.gallery-item {
+	.gallery--item {
 		display: inline-block;
-		.gallery-item-image {
+		.gallery--item-image {
 			width: 370px;
 			height: auto;
 		}
 	}
 	@media all and (max-width: 770px) {
-		.gallery-item {
+		.gallery--item {
 			clear: both;
 			margin: 0px auto;
 			display: block;
-			.gallery-item-image  {
+			.gallery--item-image  {
 				width: 300px;
 			}
 		}
@@ -282,6 +282,10 @@ footer{
 		@media all and (max-width: 770px) {
 			width: 100%;
 			padding: 10px 0px;
+			p {
+				width: 300px;
+				margin: 30px auto;
+			}
 		}
 	}
 	aside {
