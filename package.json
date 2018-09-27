@@ -1,0 +1,32 @@
+{
+  "name": "fe-test-george",
+  "version": "1.0.0",
+  "description": "Catch front-end test for George Buxton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeBuxton/FE-Test.git"
+  },
+  "keywords": [
+    "Catch",
+    "front-end",
+    "test"
+  ],
+  "author": "George Buxton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeBuxton/FE-Test/issues"
+  },
+  "homepage": "https://github.com/GeorgeBuxton/FE-Test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8"
+  }
+}

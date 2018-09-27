@@ -1,0 +1,304 @@
+@charset "UTF-8";
+// style.scss file
+
+// Variables
+$black      : #000000;
+$white      : #FFFFFF;
+$blueGrey   : #697B95;
+$grey       : #D2DCE8;
+$lightGrey  : #FAFAFA;
+$lightBlue  : #008FFF;
+$lightGreen : #76E691;
+$darkGreen  : #53b16A;
+
+
+// General Styles
+*{	
+	position: relative;
+	font-family: Arial, "sans-serif";
+	color: $blueGrey ;
+	font-size: 14px;
+}
+body, header, main, footer {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0px;
+}
+a, input, .blue { 
+	color: $lightBlue ;
+}
+h1{
+	text-align: center;
+	color: $black ;
+	font-size: 24px;
+	padding: 40px 0px 0px 0px;
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 0px;
+	margin: 0px;
+}
+header, main, footer, .container, .form, iframe {
+	display: block;
+}
+.container {
+	box-sizing: border-box;
+	clear: both;
+	width: 770px;
+	padding: 20px 0px;
+	margin: 0px auto;
+	@media all and (max-width: 770px) {
+		width: 100%;
+		padding: 20px 10px;
+	}
+}
+.left {
+	float: left;
+	@media all and (max-width: 770px) {
+		float: none;
+		clear: both;
+		margin: 0px auto;
+	}
+}
+.right {
+	float: right;
+	@media all and (max-width: 770px) {
+		float: none;
+		clear: both;
+		margin: 0px auto;
+	}
+}
+.center {
+	clear: both;
+	margin: 0px auto;
+}
+.col_6 {
+	width: 370px;
+	@media all and (max-width: 770px) {
+		width: 300px;
+	}
+}
+
+.col_12 {
+	width: 770px;
+	@media all and (max-width: 770px) {
+		width: 300px;
+	}
+}
+
+/* header */
+
+
+/* form */
+
+.form {
+
+	label {
+		position: absolute;
+		top: 26px;
+		right: 15px;
+	}
+	input:placeholder-shown + label, select + label  {
+		display: none;
+	}
+
+	select:focus + label {
+		display: block;
+		right: 40px;
+		text-align: right;
+	}
+
+	input, select, button {
+		display: block;
+		height: 48px;
+		border-radius: 5px;
+		margin: 10px auto;
+	}
+	input, select {
+		box-sizing: border-box; 
+		width: 370px;
+		border: $grey thin solid;
+		padding: 0px 0px 0px 15px;
+		background-color: $white ;
+	}
+	button:focus, input:focus, select:focus {
+	    outline-width: 0;
+	}
+
+	input:focus, select:focus {
+		color: $lightBlue ;
+		border: $lightBlue  thin solid;
+	}
+
+	.selectdiv:after {
+	    content: url(../images/icons/chevron.svg);
+	    color: $blueGrey ;
+	    right: 11px;
+	    top: 12px;
+	    padding: 15px 0px 0px 8px;
+	    position: absolute;
+	    pointer-events: none;
+	}
+
+	/* IE11 hide native button */
+
+	select::-ms-expand {
+		display: none;
+	}
+
+	.selectdiv select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		-ms-word-break: normal;
+		word-break: normal;
+	}
+
+	.btn {
+		padding: 5px 0px;
+	}
+	button {
+		width: 270px;
+		color: $white ;
+		background: $lightGreen;
+		border: $darkGreen thin solid;
+		align-self: center;
+	}
+	button:hover {
+		background: $darkGreen;
+	}
+
+	@media all and (max-width: 770px) {
+		input, select {
+			width: 300px;
+		}
+		label {
+			top: 16px;
+		}
+		.selectdiv:after {
+			right: 14px;
+			top: 2px;
+		}
+	}
+}
+
+.line-space {
+	display: block;
+	width: 170px;
+	height: 1px;
+	border-bottom: $blueGrey  1px dashed;
+	padding: 0px;
+	margin: 40px auto 50px auto;
+}
+
+
+
+/* gallery */
+
+.gallery {
+	.gallery-item {
+		display: inline-block;
+		.gallery-item-image {
+			width: 370px;
+			height: auto;
+		}
+	}
+	@media all and (max-width: 770px) {
+		.gallery-item {
+			clear: both;
+			margin: 0px auto;
+			display: block;
+			.gallery-item-image  {
+				width: 300px;
+			}
+		}
+			
+	}
+}
+
+
+
+/* carousel */
+
+iframe {
+	overflow-y: hidden;
+	box-sizing: border-box;
+	clear: both;
+	border: none;
+	width: 770px;
+	height: 240px;
+	padding: 20px 0px;
+	margin: 0px auto;
+	@media all and (max-width: 770px) {
+		width: 100%;
+	}
+}
+
+.carousel {
+	width: 1476px;
+	height: 174px;
+	.carousel-item {
+		width: auto;
+		height: 174px;
+		display: inline-block;
+		float: left;
+		margin-right: 10px;
+		.carousel-item-image {
+			width: auto;
+			height: 174px;
+		}
+	}
+}
+
+/* footer */
+
+footer{
+	position:relative;
+	bottom: 0px;
+	text-align: left;
+	background-color: $lightGrey;
+	box-shadow: $grey;
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 400px;
+	padding: 90px 0px;
+	margin: 20px 0px 0px 0px;
+	section {
+		display: block;
+		float: left;
+		width: 370px;
+		.social-icon {
+			width: 39px;
+		}
+		@media all and (max-width: 770px) {
+			width: 100%;
+			padding: 10px 0px;
+		}
+	}
+	aside {
+		float: right;
+		width: 270px;
+		@media all and (max-width: 770px) {
+			float: left;
+			width: 100%;
+			padding: 10px 0px;	
+		}
+	}
+	
+	@media all and (max-width: 770px) {
+		text-align: center;
+		height: 460px;
+		padding: 40px 0px;	
+	}
+}
+
+	
