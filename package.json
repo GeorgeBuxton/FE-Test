@@ -26,6 +26,7 @@
     "gulp-browserify": "^0.5.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.6.1",
     "gulp-sass": "^4.0.1",
     "gulp-util": "^3.0.8"
   }
