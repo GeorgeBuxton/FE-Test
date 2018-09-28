@@ -37,10 +37,10 @@ You may need to type in your password.
 
 ### Installing Ruby
 
-Ruby should already be installed on your Mac. To update Ruby on a Mac please run 
+Ruby should already be installed on your Mac. To update Ruby on a Mac type into the commandline: gem update
 
 
 ### Installing SASS
 
-In the command line on a Mac type: 
+In the command line on a Mac type into the commandline: 
 gem install sass
